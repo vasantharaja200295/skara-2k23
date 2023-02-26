@@ -1,0 +1,174 @@
+body{
+    background-color: #0c0c0c;
+}
+
+a{
+    text-decoration: none;
+    color: #BE903E;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+}
+
+header>h1{
+    color:#BE903E;
+}
+
+nav{
+    position: relative;
+    right: -45%;
+}
+
+nav>ul>li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    font-family: monospace;
+    align-items: center;
+    color:#BE903E;
+}
+
+nav>ul>li>button{
+    background-color: gold;
+    color: black;
+    border: 0;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 5px;
+}
+
+h1{
+    color:#BE903E;
+}
+
+.mainContainer{
+    height: 100%;
+    width:100%;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemContainer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: #2c2c2c;
+    height: 50%;
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-color: gold ;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px;
+    padding:40px;
+    margin: 40px;
+}
+
+.mainContainer>img , .mainContainer>div{
+    animation-name: intro;
+    animation-duration: 2s;
+  }
+  
+  @keyframes intro {
+    0%{
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .event-logo{
+    margin-left: 10px; border-radius: 10px;
+    height: 70%;
+    width: 30%;
+  }
+
+
+  @media screen and (max-width: 480px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    nav{
+        position: relative;
+        left:-20px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .event-logo{
+        height: 90%;
+        width: 90%;
+        margin: 10px;
+    }
+
+
+
+    .container{
+        flex-direction: column;
+        width: 65%;
+    }
+  
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    nav{
+        position: relative;
+        left:-20px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .event-logo{
+        height: 90%;
+        width: 90%;
+        margin: 10px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+  
+  }
+  
